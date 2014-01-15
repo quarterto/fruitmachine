@@ -23,7 +23,7 @@ buster.testCase('fruitmachine#helpers()', {
   },
 
   "helper `initialize` should have been called": function() {
-    fruitmachine({
+    var view = fruitmachine({
       module: 'apple',
       helpers: [this.helper]
     });
