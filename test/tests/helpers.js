@@ -1,3 +1,5 @@
+var assert = buster.assertions.assert;
+
 buster.testCase('fruitmachine#helpers()', {
   setUp: function() {
     var helper = this.helper = function(view) {
@@ -21,7 +23,7 @@ buster.testCase('fruitmachine#helpers()', {
   },
 
   "helper `initialize` should have been called": function() {
-    var view = fruitmachine({
+    fruitmachine({
       module: 'apple',
       helpers: [this.helper]
     });

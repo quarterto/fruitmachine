@@ -1,3 +1,5 @@
+var assert = buster.assertions.assert;
+var refute = buster.assertions.refute;
 
 buster.testCase('View#on()', {
 	setUp: helpers.createView,
@@ -7,7 +9,7 @@ buster.testCase('View#on()', {
 
 		this.view.on('testevent', spy);
 		this.view.fire('testevent');
-	  assert(spy.called);
+		assert(spy.called);
 	},
 
 	"Should recieve the callback when event is fired on a sub view": function() {
@@ -16,7 +18,7 @@ buster.testCase('View#on()', {
 
 		this.view.on('testevent', spy);
 		apple.fire('testevent');
-	  assert(spy.called);
+		assert(spy.called);
 	},
 
 	"Should *not* recieve the callback when event is fired on a sub view that *doesn't* match the target": function() {
@@ -25,7 +27,7 @@ buster.testCase('View#on()', {
 
 		this.view.on('testevent', 'orange', spy);
 		apple.fire('testevent');
-	  refute(spy.called);
+		refute(spy.called);
 	},
 
 	"Should receive the callback when event is fired on a sub view that *does* match the target": function() {
@@ -34,7 +36,7 @@ buster.testCase('View#on()', {
 
 		this.view.on('testevent', 'apple', spy);
 		apple.fire('testevent');
-	  assert(spy.called);
+		assert(spy.called);
 	},
 
 	"Should pass the correct arguments to delegate event listeners": function() {
@@ -43,7 +45,7 @@ buster.testCase('View#on()', {
 
 		this.view.on('testevent', 'apple', spy);
 		apple.fire('testevent', 'foo', 'bar');
-	  assert(spy.calledWith('foo', 'bar'));
+		assert(spy.calledWith('foo', 'bar'));
 	},
 
 	tearDown: helpers.destroyView
