@@ -92,7 +92,7 @@ $ node_modules/.bin/buster-static
 - **Matt Andrews** - [@matthew-andrews](http://github.com/matthew-andrews)
 
 ## License
-Copyright (c) 2012 The Financial Times Limited
+Copyright (c) 2014 The Financial Times Limited
 Licensed under the MIT license.
 
 ## Credits and collaboration
