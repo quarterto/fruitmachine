@@ -1,4 +1,4 @@
-# FruitMachine [![Build Status](https://travis-ci.org/ftlabs/fruitmachine.svg?branch=master)](https://travis-ci.org/ftlabs/fruitmachine)
+# FruitMachine [![Build Status](https://travis-ci.org/ftlabs/fruitmachine.svg?branch=master)](https://travis-ci.org/ftlabs/fruitmachine) [![Coverage Status](https://coveralls.io/repos/ftlabs/fruitmachine/badge.png?branch=master)](https://coveralls.io/r/ftlabs/fruitmachine?branch=master) [![Dependency Status](https://gemnasium.com/ftlabs/fruitmachine.png)](https://gemnasium.com/ftlabs/fruitmachine)
 
 A lightweight component layout engine for client and server.
 
@@ -35,10 +35,9 @@ $ bower install fruitmachine
 
 or
 
-Download the [production version][min] (~2k gzipped) or the [development version][max].
+Download the [pre-built version][built] (~2k gzipped).
 
-[min]: http://github.com/ftlabs/fruitmachine/raw/master/build/fruitmachine.min.js
-[max]: http://github.com/ftlabs/fruitmachine/raw/master/build/fruitmachine.js
+[built]: http://wzrd.in/standalone/fruitmachine@latest
 
 ## Examples
 
@@ -91,6 +90,10 @@ $ node_modules/.bin/buster-static
 
 - **Wilson Page** - [@wilsonpage](http://github.com/wilsonpage)
 - **Matt Andrews** - [@matthew-andrews](http://github.com/matthew-andrews)
+
+## License
+Copyright (c) 2014 The Financial Times Limited
+Licensed under the MIT license.
 
 ## Credits and collaboration
 
